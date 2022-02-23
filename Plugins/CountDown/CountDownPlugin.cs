@@ -20,15 +20,14 @@ namespace CountDown
             if (input.Message == "")
             {
                 input.Callbacks.StartSession();
-                return new PluginOutput("enter number secaond", input.Message);
+                return new PluginOutput("Insert for a few seconds", input.Message);
             }
-            else 
-            { 
-                var interval = int.Parse(input.Message);
-                _scheduler.Schedule(TimeSpan.FromSeconds(interval), Id, "");
+            
                 input.Callbacks.EndSession();
-                return new PluginOutput("the count down stooped", input.PersistentData);
-            }
+                var interval = int.Parse(input.Message);
+               _scheduler.Schedule(TimeSpan.FromSeconds(interval), Id, "");
+               
+                return new PluginOutput("Countdown started.");
 
            
 
