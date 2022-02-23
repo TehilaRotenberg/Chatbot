@@ -22,10 +22,15 @@ namespace CountDown
                 input.Callbacks.StartSession();
                 return new PluginOutput("enter number secaond", input.Message);
             }
-               
-            var interval = int.Parse(input.Message);
-            _scheduler.Schedule(TimeSpan.FromSeconds(interval), Id, "");
-            return new PluginOutput("Countdown started.");
+            else 
+            { 
+                var interval = int.Parse(input.Message);
+                _scheduler.Schedule(TimeSpan.FromSeconds(interval), Id, "");
+                input.Callbacks.EndSession();
+                return new PluginOutput("the count down stooped", input.PersistentData);
+            }
+
+           
 
         }
         
