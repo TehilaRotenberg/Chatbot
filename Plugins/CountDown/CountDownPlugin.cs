@@ -17,14 +17,22 @@ namespace CountDown
 
         public PluginOutput Execute(PluginInput input)
         {
+            if (input.Message == "")
+            {
+                input.Callbacks.StartSession();
+                return new PluginOutput("enter number secaond", input.Message);
+            }
+               
             var interval = int.Parse(input.Message);
             _scheduler.Schedule(TimeSpan.FromSeconds(interval), Id, "");
             return new PluginOutput("Countdown started.");
 
         }
+        
 
         public void OnScheduler(string data)
         {
+           
             Console.WriteLine("Fired.");
         }
     }

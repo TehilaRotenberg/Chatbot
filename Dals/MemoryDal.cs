@@ -17,12 +17,13 @@ namespace Dals
         {
             var key = CreateKey(userData, pluginId);
 
-            if (_map.ContainsKey(key))
+            if ((_map.ContainsKey(key)))
             {
-                return _map[key];
+                 return _map[key];
             }
-
             return null;
+       
+           
         }
 
         string CreateKey(string userData, string pluginId) => $"{userData}__{pluginId}";
