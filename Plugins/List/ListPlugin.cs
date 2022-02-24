@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 
+
 namespace ListPlugin
 {
     record PersistentDataStructure(List<string> List);
@@ -18,7 +19,7 @@ namespace ListPlugin
         public PluginOutput Execute(PluginInput input)
         {
             List<string> list = new();
-
+           
             if (string.IsNullOrEmpty(input.PersistentData) == false)
             {
                 list = JsonSerializer.Deserialize<PersistentDataStructure>(input.PersistentData).List;
@@ -34,7 +35,7 @@ namespace ListPlugin
                 input.Callbacks.EndSession();
                 return new PluginOutput("List stopped.", input.PersistentData);
             }
-            else if (input.Message.StartsWith("add"))
+            else if (input.Message.ToLower().StartsWith("add"))
             {
                 var str = input.Message.Substring("add".Length).Trim();
                 list.Add(str);
