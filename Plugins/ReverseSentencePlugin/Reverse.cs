@@ -16,7 +16,10 @@ namespace ReverseSentencePlugin
         public string Id => _Id;
         public PluginOutput Execute(PluginInput input)
         {
-                return new PluginOutput(input.Message.Reverse().ToString(),input.PersistentData);
+              var reverseS = input.Message.Reverse();
+            string st = "";
+            foreach (var c in reverseS) { st += c;}
+                return new PluginOutput(st,input.PersistentData);
         }
     }
 }
