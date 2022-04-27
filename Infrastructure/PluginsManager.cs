@@ -4,13 +4,10 @@ using Counter;
 using CountTheWords;
 using DiceRoller;
 using Echo;
-using ListPlugin;
 using CountWord;
+
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure
 {
@@ -49,6 +46,10 @@ namespace Infrastructure
             {
                 return new CountWordPlugin();
             }
+            else if (id == checkBrackets.CheckBrackets._Id)
+            {
+                return new CountWordPlugin();
+            }
             else
 
             {
@@ -64,7 +65,8 @@ namespace Infrastructure
             EchoPlugin._Id,
             ListPlugin.ListPlugin._Id,
             CountTheWordsPlugin._Id,
-            CountWordPlugin._Id
+            CountWordPlugin._Id,
+            checkBrackets.CheckBrackets._Id
         };
     }
 }
