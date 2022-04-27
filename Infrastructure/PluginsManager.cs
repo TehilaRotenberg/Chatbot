@@ -49,6 +49,11 @@ namespace Infrastructure
             {
                 return new CountWordPlugin();
             }
+
+            else if (id == rever._Id)
+            {
+                return new CountWordPlugin();
+            }
             else
 
             {
