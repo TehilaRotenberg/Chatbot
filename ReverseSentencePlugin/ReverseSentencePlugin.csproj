@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <OutputType>Exe</OutputType>
+	
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Shared\BasePlugin\BasePlugin.csproj" />
+		<ProjectReference Include="..\Shared\BasePlugin\BasePlugin.csproj" />
+	</ItemGroup>
+</Project>
