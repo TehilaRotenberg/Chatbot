@@ -70,7 +70,9 @@ namespace Infrastructure
             EchoPlugin._Id,
             ListPlugin.ListPlugin._Id,
             CountTheWordsPlugin._Id,
-            CountWordPlugin._Id
+            CountWordPlugin._Id,
+            Reverse._Id
+           
         };
     }
 }
