@@ -8,6 +8,7 @@ using CountWord;
 
 using System;
 using System.Collections.Generic;
+using checkBrackets;
 
 namespace Infrastructure
 {
@@ -48,7 +49,7 @@ namespace Infrastructure
             }
             else if (id == checkBrackets.CheckBrackets._Id)
             {
-                return new CountWordPlugin();
+                return new CheckBrackets();
             }
             else
 

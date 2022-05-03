@@ -1,9 +1,10 @@
-﻿using BasePlugin.Records;
+﻿using BasePlugin.Interfaces;
+using BasePlugin.Records;
 using System.Collections.Generic;
 
 namespace checkBrackets
 {
-    public class CheckBrackets
+    public class CheckBrackets : IPlugin
     {
 
         public static string _Id = "check-string";
