@@ -8,6 +8,10 @@ using CountWord;
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ReverseSentencePlugin;
 using checkBrackets;
 
 namespace Infrastructure
@@ -47,6 +51,11 @@ namespace Infrastructure
             {
                 return new CountWordPlugin();
             }
+
+            else if (id == Reverse._Id)
+            {
+                return new Reverse();
+            }
             else if (id == checkBrackets.CheckBrackets._Id)
             {
                 return new CheckBrackets();
@@ -67,6 +76,7 @@ namespace Infrastructure
             ListPlugin.ListPlugin._Id,
             CountTheWordsPlugin._Id,
             CountWordPlugin._Id,
+            Reverse._Id,
             checkBrackets.CheckBrackets._Id
         };
     }
