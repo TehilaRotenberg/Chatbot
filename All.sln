@@ -33,7 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountTheWords", "Plugins\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountWordPlugin", "Plugins\CountWord\CountWordPlugin.csproj", "{7DA2498A-C086-4046-AFF8-331B3D10C2B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseSentencePlugin", "Plugins\ReverseSentencePlugin\ReverseSentencePlugin.csproj", "{5E2B6B2A-2045-4265-BDF4-6718A85BE7BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseSentencePlugin", "Plugins\ReverseSentencePlugin\ReverseSentencePlugin.csproj", "{5E2B6B2A-2045-4265-BDF4-6718A85BE7BF
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckBracketsPlugin", "Plugins\CheckBracketsPlugin\CheckBracketsPlugin.csproj", "{61DC15D5-556B-4388-AB7D-71934AEB2058}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +94,10 @@ Global
 		{5E2B6B2A-2045-4265-BDF4-6718A85BE7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E2B6B2A-2045-4265-BDF4-6718A85BE7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E2B6B2A-2045-4265-BDF4-6718A85BE7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61DC15D5-556B-4388-AB7D-71934AEB2058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61DC15D5-556B-4388-AB7D-71934AEB2058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61DC15D5-556B-4388-AB7D-71934AEB2058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61DC15D5-556B-4388-AB7D-71934AEB2058}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +114,7 @@ Global
 		{8F03F228-0CD9-44B4-BAD1-C7D4E1399F0B} = {C780C672-B2D3-4C38-9413-1ABBA88885BD}
 		{7DA2498A-C086-4046-AFF8-331B3D10C2B5} = {C780C672-B2D3-4C38-9413-1ABBA88885BD}
 		{5E2B6B2A-2045-4265-BDF4-6718A85BE7BF} = {C780C672-B2D3-4C38-9413-1ABBA88885BD}
+		{61DC15D5-556B-4388-AB7D-71934AEB2058} = {C780C672-B2D3-4C38-9413-1ABBA88885BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {736E1636-C7C4-4B01-AC5C-397D68000922}
