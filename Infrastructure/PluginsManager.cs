@@ -5,6 +5,7 @@ using CountTheWords;
 using DiceRoller;
 using Echo;
 using CountWord;
+using AddAndSubUpTo20;
 
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,7 @@ namespace Infrastructure
         public IPlugin CreatePlugin(string id)
         {
             if (id == CountDownPlugin._Id)
-            { 
+            {
                 return new CountDownPlugin(new Scheduler(this));
             }
             else if (id == DiceRollerPlugin._Id)
@@ -61,6 +62,8 @@ namespace Infrastructure
                 return new CheckBrackets();
             }
             else
+            if (id == AddAndSub._Id)
+                return new AddAndSub();
 
             {
                 throw new NotImplementedException();
@@ -77,7 +80,8 @@ namespace Infrastructure
             CountTheWordsPlugin._Id,
             CountWordPlugin._Id,
             Reverse._Id,
-            checkBrackets.CheckBrackets._Id
+            checkBrackets.CheckBrackets._Id,
+            AddAndSub._Id
         };
     }
 }

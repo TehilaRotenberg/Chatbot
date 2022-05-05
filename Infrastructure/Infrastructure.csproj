@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AddAndSubUpTo20\AddAndSubUpTo20.csproj" />
     <ProjectReference Include="..\Plugins\CheckBracketsPlugin\CheckBracketsPlugin.csproj" />
     <ProjectReference Include="..\Plugins\CountDown\CountDown.csproj" />
     <ProjectReference Include="..\Plugins\Counter\Counter.csproj" />
